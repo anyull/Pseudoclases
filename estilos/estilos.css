@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(176, 133, 201);
+    margin: 0;
+    padding: 0;
+}
+.boton {
+    color: rgb(75, 1, 90);
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(248, 161, 229);
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton2{
+        color: rgb(255, 255, 255);
+      
+}
+
+.boton2:active{
+        color: rgb(121, 2, 121);
+      }
+
+.boton3{
+    margin-left: 35px;
+    border: 1px solid rgb(50, 2, 71);
+}
+
+.boton3:checked{
+    margin-left: 35px;
+    border: 1px solid rgb(50, 2, 71);
+}
+
+.boton4{
+   background-color: rgba(231, 176, 231, 0.479);
+   box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.boton4:default{
+    background-color: rgb(116, 24, 190);
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+ p {
+    background: rgb(112, 84, 106);
+    font-style: oblique;
+    display: block;
+ }
+
+
+ :dir(rtl) {
+    background-color: red;
+  }
+  :dir(rtl) {
+    background-color: rgb(130, 95, 196);
+  }
+
+
+  input[type="text"]:disabled {
+    background: #6d1717;
+  } 
+
+
+  .box {
+    background: rgb(186, 68, 209);
+    height: 150px;
+    width: 380px;
+  }
+  
+  .box:empty {
+    background: rgb(221, 127, 216);
+  }
+
+  input:disabled {
+    color: #6a5991;
+  }
+
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  
+  p {
+    page-break-after: always;
+  }
+
+  p:first-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+
+  .p1:first-of-type {
+    background-color: #e7b5b5;
+    font-style:unset
+  }
+
+  #fullscreen:fullscreen {
+    padding: 42px;
+    background-color: pink;
+    border: 2px solid #f00;
+    font-size: 200%;
+  }
+  
+  #fullscreen:fullscreen > h1 {
+    color: red;
+  }
+  
+  #fullscreen:fullscreen > p {
+    color: darkred;
+  }
+  
+  #fullscreen:fullscreen > button {
+    display: none;
+  }
+
+  .red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }
+
+  input:indeterminate + label {
+    background: lime;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  
+  input {
+    border: 1px solid black;
+  }
+  
+  input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+  }
+  
+  input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+  }
+  
+  input:in-range + label::after {
+    content: "bien.";
+  }
+  
+  input:out-of-range + label::after {
+    content: "fuera de rango!";
+  }
+
+  input:invalid {
+    background-color: #ffdddd;
+  }
+  
+  form:invalid {
+    border: 5px solid #ffdddd;
+  }
+  
+  input:valid {
+    background-color: #ddffdd;
+  }
+  
+  form:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #c00000;
+  }
+
+  :lang(en) > q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+  }
+  :lang(fr) > q {
+    quotes: "« " " »";
+  }
+  :lang(de) > q {
+    quotes: "»" "«" "\2039" "\203A";
+  }
+
+  p:last-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+
+  
+  .lastoftype:last-of-type {
+    color: red;
+    font-style: italic;
+  }
+
+  .textcenter:link{
+    background-color: gold;
+    color: green;
+  }
+
+  .localink:local-link {
+    color: green;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 2rem;
+  }
+  
+  :modal {
+    background-color: beige;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+  }
+  
+  p {
+    color: black;
+  }
+
+  :muted {
+    outline: 5px solid red;
+  }
+  
+  video:muted {
+    outline: 5px solid blue;
+  }
+  
+  
+  p:not(.irrelevant) {
+    font-weight: bold;
+  }
+  
+  p > strong,
+  p > b.important {
+    color: crimson;
+  }
+  
+  p > :not(strong, b.important) {
+    color: darkmagenta;
+  }
+
+  p {
+    font-weight: bold;
+  }
+  
+  li:nth-child(-n + 3) {
+    border: 2px solid orange;
+    margin-bottom: 1px;
+  }
+  
+  li:nth-child(even) {
+    background-color: lightyellow;
+  }
+
+  p {
+    font-weight: bold;
+  }
+  
+  .ntc:nth-last-child(-n + 3) {
+    border: 2px solid orange;
+    margin-top: 1px;
+  }
+  
+  .ntc:nth-last-child(even) {
+    background-color: lightyellow;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    margin: 3px;
+  }
+  
+  dd:nth-last-of-type(3n) {
+    border: 2px solid orange;
+  }
+
+  li:only-child {
+    color: fuchsia;
+  }
+  
+  b:only-child {
+    text-decoration: underline;
+  }
+
+  a:only-of-type {
+    color: fuchsia;
+  }
+  
+  dd:only-of-type {
+    background-color: bisque;
+  }
+
+  label {
+    display: block;
+    margin-top: 1em;
+  }
+  
+  .req {
+    color: red;
+  }
+  
+  *:optional {
+    background-color: palegreen;
+  }
+  label {
+    display: block;
+    margin-top: 1em;
+  }
+  
+  input:out-of-range {
+    background-color: orangered;
+  }
+
+  .ro input {
+    min-width: 25em;
+  }
+  .ro input:-moz-read-only {
+    background: cyan;
+  }
+  .ro input:read-only {
+    background: cyan;
+  }
+  
+  .roo p:-moz-read-only {
+    background: lightgray;
+  }
+  .roo p:read-only {
+    background: lightgray;
+  }
+  .roo p[contenteditable="true"] {
+    color: blue;
+  }
+
+
+  .rw input {
+    min-width: 25em;
+  }
+  .rw input:-moz-read-write {
+    background: cyan;
+  }
+  .rw input:read-write {
+    background: cyan;
+  }
+  
+  .rww p:-moz-read-write {
+    background: lightgray;
+  }
+  .rww p:read-write {
+    background: lightgray;
+  }
+  .rww p[contenteditable="true"] {
+    color: blue;
+  }
+
+  input:required {
+    border: 1px dashed red;
+  }
+  
+  

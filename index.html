@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pseudoclases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estilos.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <main class="row">
+            <header class="col-12">
+                <h1 class="display-1 text-center">Pseudoclases</h1>
+            </header>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center">
+                        :Hover
+                    </h2>
+                    <a href="index.html" class="boton">Soy boton Hover</a>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center">
+                        :Active
+                    </h2>
+                    <a href="#" class="boton2">Este enlace cambiará a color morado mientras hace clic en él.</a>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center">
+                        :Checked
+                    </h2>
+                    <div class="boton3"> Soy boton Checked
+                            <input type="radio" name="my-input" id="yes" />
+                            <label for="yes">Si</label>
+                          
+                            <input type="radio" name="my-input" id="no" />
+                            <label for="no">No</label>
+                </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Default</h2>
+                    <div class="boton4"> ¿Te gusta Tim Burton?
+                    <input type="radio" name="season" id="spring" />
+                    <label for="spring">Si</label>
+
+                    <input type="radio" name="season" id="summer" checked />
+                    <label for="summer">No</label>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Defined</h2>
+                        <simple-custom text="Texto de ejemplo del elemento personalizado"></simple-custom>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae pariatur praesentium aperiam, debitis voluptates sit quod fugiat earum illum inventore et quos nam, odio at? Adipisci id sint similique officia.</p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Dir()</h2>
+                    <div dir="rtl">
+                        <span>test1</span>
+                        <div dir="ltr">
+                          test2
+                          <div dir="auto">עִבְרִית</div>
+                        </div>
+                      </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Disabled </h2>
+                    <form action="#">
+                        <fieldset id="shipping">
+                          <legend>Dirección de Envío</legend>
+                          <input type="text" placeholder="Nombre" />
+                          <input type="text" placeholder="Dirección" />
+                          <input type="text" placeholder="Código postal" />
+                        </fieldset>
+                        <br />
+                        <fieldset id="billing">
+                          <legend>Dirección de facturación</legend>
+                          <label for="billing_is_shipping">Igual que la dirección de envío:</label>
+                          <input type="checkbox" id="billing-checkbox" checked />
+                          <br />
+                          <input type="text" placeholder="Nombre" disabled />
+                          <input type="text" placeholder="Dirección" disabled />
+                          <input type="text" placeholder="Código postal" disabled />
+                        </fieldset>
+                      </form>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Empty </h2>
+                    <div class="box">Voy a ser de color morado.</div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Enabled </h2>
+                    <form action="url_of_form">
+                        <label for="FirstField">Primer campo (habilitado):</label>
+                        <input type="text" id="FirstField" value="Lorem" /><br />
+                      
+                        <label for="SecondField">Segundo campo (deshabilitado):</label>
+                        <input type="text" id="SecondField" value="Ipsum" disabled="disabled" /><br />
+                      
+                        <input type="button" value="Enviar" />
+                      </form>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :First </h2>
+                    <p>Primera página.</p>
+                    <p>Segunda página.</p>
+                    <button>Imprimir!</button>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :First Child </h2>
+                    <div>
+                        <p>¡Este texto está seleccionado!</p>
+                        <p>Este texto no está seleccionado.</p>
+                      </div>
+                      
+                      <div>
+                        <h2>Este texto no está seleccionado: no es un `p`.</h2>
+                        <p>Este texto no está seleccionado.</p>
+                      </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :First Of Type </h2>
+                    <h2>Encabezado</h2>
+                    <p class="p1">Párrafo 1</p>
+                    <p>Párrafo 2</p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Fullscreen </h2>
+                    <div id="fullscreen">
+                        <h1>Demostración :fullscreen</h1>
+                        <p>
+                          Este texto se pondrá grande y rojo cuando el navegador esté en modo de
+                          pantalla completa.
+                        </p>
+                        <button id="fullscreen-button">Entrar en pantalla completa</button>
+                      </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Focus </h2>
+                    <input
+                    class="red-input"
+                    value="Voy a ser de color rojo cuando enfoque." /><br />
+                    <input class="blue-input" value="Voy a ser de color azul cuando enfoque." />
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Inderterminate </h2>
+                    <div>
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="radio" />
+                        <label for="radio">Esta etiqueta comienza con el color lima.</label>
+                      </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :In Range </h2>
+                    <form action="" id="form1">
+                        <ul>
+                          Los valores entre 1 y 10 son válidos.
+                          <li>
+                            <input
+                              id="value1"
+                              name="value1"
+                              type="number"
+                              placeholder="1 a 10"
+                              min="1"
+                              max="10"
+                              value="12" />
+                            <label for="value1">Tu valor esta </label>
+                          </li>
+                        </ul>
+                      </form>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Invalid </h2>
+                    <form>
+                        <label for="url_input">Ingresa una URL:</label>
+                        <input type="url" id="url_input" />
+                        <br />
+                        <br />
+                        <label for="email_input"
+                          >Introduzca una dirección de correo electrónico:</label
+                        >
+                        <input type="email" id="email_input" required />
+                      </form>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :lang </h2> 
+                    <div lang="en">
+                        <q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q>
+                      </div>
+                      <div lang="fr">
+                        <q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q>
+                      </div>
+                      <div lang="de">
+                        <q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q>
+                      </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Last Child </h2> 
+                    <div>
+                        <p>Este texto no está seleccionado.</p>
+                        <p>¡Este texto está seleccionado!</p>
+                      
+                      
+                      
+                        <p>Este texto no está seleccionado.</p>
+                        <h2>Este texto no está seleccionado: no es un `p`.</h2>
+                      </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Last of Type </h2> 
+                    <h2>Título</h2>
+                    <p>Párrafo 1</p>
+                    <p class="lastoftype">Párrafo 2</p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Link </h2> 
+                    <a href="index.html" class="textcenter">Este es un enlace ordinario.</a><br/>
+                    <a href="index.html" class="textcenter">Ya has visitado este enlace.</a><br/>
+                    <a>Enlace de marcador de posición (no se personalizará)</a>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Local Link </h2> 
+                    <a href="index.html" class="localink">This is a link on the current page.</a><br />
+                    <a href="index.html" class="localink">This is an external link</a><br />
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Modal </h2> 
+                    <p>Would you like to see a new random number?</p>
+                    <button id="showNumber">Show me</button>
+
+                    <dialog id="favDialog">
+                    <form method="dialog">
+                        <p>Lucky number is: <strong id="number"></strong></p>
+                           <button>Close dialog</button>
+                    </form>
+                    </dialog>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Muted </h2> 
+                    <div class="muted">
+                        :muted {
+                            /* ... */
+                          }
+                    </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :not() </h2> 
+                    <p>
+                        <b>Mars</b> is one of the most Earth-like planets. <b>Mars</b> day is almost the same as an Earth day, only
+                        <strong>37 minutes</strong> longer.
+                      </p>
+                      
+                      <p class="irrelevant">
+                        <b class="important">NASA</b>'s Jet <del>Momentum</del> Propulsion Laboratory is designing mission concepts to survive
+                        the <b>Venus</b> extreme temperatures and atmospheric pressure.
+                      </p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :nth child () </h2> 
+                    <p>Track & field champions:</p>
+                    <ul>
+                        <li>Adhemar da Silva</li>
+                        <li>Wang Junxia</li>
+                        <li>Wilma Rudolph</li>
+                        <li>Babe Didrikson-Zaharias</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :nth last child () </h2> 
+                    <p>Eight deadliest wildfires:</p>
+                     <ol reversed>
+                       <li class="ntc">Matheson Fire</li>
+                       <li class="ntc">Miramichi Fire</li>
+                       <li class="ntc">1997 Indonesian fires</li>
+                       <li class="ntc">Thumb Fire</li>
+                       <li class="ntc">Great Hinckley Fire</li>
+                       <li class="ntc">Cloquet Fire</li>
+                       <li class="ntc">Kursha-2 Fire</li>
+                       <li class="ntc">Peshtigo Fire</li>
+                     </ol>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :nth last of type () </h2> 
+                    <dl>
+                        <dt>Vegetables:</dt>
+                        <dd>1. Tomatoes</dd>
+                        <dd>2. Cucumbers</dd>
+                        <dd>3. Mushrooms</dd>
+                        <dt>Fruits:</dt>
+                        <dd>4. Apples</dd>
+                        <dd>5. Mangos</dd>
+                        <dd>6. Pears</dd>
+                        <dd>7. Oranges</dd>
+                      </dl>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Only Child </h2> 
+                    <dl>
+                    <p>Stars expected to attend:</p>
+                    <ol>
+                      <li>Robert Downey, Jr.</li>
+                    </ol>
+
+                    <p>Stars yet to confirm:</p>
+                    <ol>
+                      <li>Scarlett Johansson</li>
+                      <li>Samuel L. Jackson</li>
+                      <li>Chris Pratt</li>
+                    </ol>
+                    <p>The ceremony is going to be held in <b>The Dolby Theatre</b>.</p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Only On Type </h2> 
+                    <p>To find out more about <b>QUIC</b>, check <a href="#">RFC 9000</a> and <a href="#">RFC 9114</a>.</p>
+                    <dl>
+                      <dt>Published</dt>
+                      <dd>2021</dd>
+                      <dd>2022</dd>
+                    </dl>
+
+                    <p>Details about <b>QPACK</b> can be found in <a href="#">RFC 9204</a>.</p>
+
+                    <dl>
+                      <dt>Published</dt>
+                      <dd>2022</dd>
+                    </dl>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Optional </h2> 
+                    <form>
+                        <label for="name">Name: <span class="req">*</span></label>
+                        <input id="name" name="name" type="text" required />
+                      
+                        <label for="birth">Date of Birth:</label>
+                        <input id="birth" name="birth" type="date" />
+                      
+                        <label for="origin">How did you find out about us? <span class="req">*</span></label>
+                        <select id="origin" name="origin" required>
+                          <option>Google</option>
+                          <option>Facebook</option>
+                          <option>Advertisement</option>
+                        </select>
+                        <p><span class="req">*</span> - Required field</p>
+                      </form>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Out of Range </h2>
+                    <form>
+                        <label for="amount">How many tickets? (You can buy 2-6 tickets)</label>
+                        <input id="amount" name="amount" type="number" min="2" max="6" value="4" />
+                      
+                        <label for="dep">Departure Date: (Whole year 2022 is acceptable)</label>
+                        <input id="dep" name="dep" type="date" min="2022-01-01" max="2022-12-31" value="2025-05-05" />
+                      
+                        <label for="ret">Return Date: (Whole year 2022 is acceptable)</label>
+                        <input id="ret" name="ret" type="date" min="2022-01-01" max="2022-12-31" />
+                      </form>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Read Only</h2>
+                    <input type="text" value="Aquí puedes poner lo que quieras. "  class="ro"/>
+                    <input type="text" value="Campo de solo lectura. " class="ro" readonly />
+                    <p  class="roo">Este es un párrafo normal.</p>
+                    <p contenteditable="true" class="roo" >Puedes editar este párrafo, ¡inténtalo!</p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Root</h2>
+                  <p>
+                    La pseudo-clase :root de CSS selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento "html" y es idéntico al selector html, excepto que su especificidad es mayor.
+                  </p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Right</h2>
+                    <p>
+                        La pseudo-clase CSS :right, utilizada con la regla-at @page, representa todas las páginas de la derecha de un documento impreso.
+                    </p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Scope</h2>
+                    <p>
+                        La pseudoclase :scope CSS representa elementos que son un punto de referencia para que los selectores coincidan.
+                    </p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Read Write</h2>
+                    <input type="text" value="Escribe lo que quieras aquí. " class="rw"/>
+                    <input type="text" value="Este es un campo de solo lectura."class="rw" readonly />
+                    <p class="rww">Este es un párrafo normal.</p>
+                    <p contenteditable="true" class="rww">¡Puedes editar este párrafo!</p>
+                </section>
+            </div>
+            <div class="col-3">
+                <section>
+                    <h2 class="display-4 text-center"> :Required</h2>
+                    <input type="text" class="req" required="" value="Yo si soy " readonly="">
+                    <input type="text" class="req" value="Yo no soy " readonly="">
+                </section>
+            </div>
+        </div>
+        
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
